@@ -18,8 +18,30 @@ body{
     width: 100%;
 }
 
+.envios-top-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-top-info{
+    height: 16px;
+    width: 16px;
+}
+
 .texto-top-info{
     text-align: center;
+}
+
+.link-top-info{
+    color: #d2d6d9ad;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.link-top-info:hover{
+    text-decoration: underline;
+    color: #d2d6d9ad;
 }
 
 #header-navbar{
@@ -29,8 +51,9 @@ body{
     justify-content: space-around;
     position: fixed;
     top: 0;
+    z-index: 9999;
     width: 100%;
-    border-bottom: 1px solid #e2e2e2;
+    background-color: #fff;
 }
 
 .padre-navbar{
@@ -56,6 +79,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #fff;
 }
 
 .link-nav{
@@ -77,6 +101,62 @@ body{
     transform: scale(1.1);
 }
 
+#banner{
+    margin-top: 150px;
+}
+
+.banner-home{
+    height: 60%;
+    width: 100%;
+}
+
+#articulos-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.titulo-articulos-home{
+    font-weight: 600;
+}
+
+.cards-articulos-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card-home{
+    width: 80%;
+}
+
+.text-card-home{
+    font-weight: 600;
+}
+
+
+@media (min-width: 1024px){
+    .top-info{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 5px;
+    }
+    .envios-top-info{
+        flex-direction: row;
+        gap: 10px;
+    }
+    .cards-articulos-home{
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 50px;
+    }
+}
+
 @media (min-width: 576px){
     .navbar-collapse{
         flex-grow: 0;
@@ -84,5 +164,38 @@ body{
     .list-link-nav{
         flex-direction: row;
         gap: 30px;
+    }
+    #banner{
+        margin-top: 110px;
+    }
+}
+
+@media (max-width: 478px){
+    #banner{
+        margin-top: 175px;
+    }
+}
+
+@media (min-width: 500px){
+    .card-home{
+        width: 18rem;
+    }
+}
+
+@media (max-width: 210px){
+    #banner{
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 165px){
+    #banner{
+        margin-top: 225px;
+    }
+}
+
+@media (max-width: 150px){
+    #banner{
+        margin-top: 260px;
     }
 }
