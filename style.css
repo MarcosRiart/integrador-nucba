@@ -139,6 +139,31 @@ body{
     font-weight: 600;
 }
 
+#envios-pagos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
+    background-color: #1414141a;
+    width: 100%;
+}
+
+.items-envios-pagos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-servicios{
+    font-weight: 600;
+}
+
+.items-envios-pagos h6{
+    color: #141414;
+    font-weight: 200;
+}
 
 @media (min-width: 1024px){
     .top-info{
@@ -168,6 +193,12 @@ body{
     #banner{
         margin-top: 110px;
     }
+    #envios-pagos{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0px;
+        margin-top: 0px;
+    }
 }
 
 @media (max-width: 478px){
@@ -185,6 +216,9 @@ body{
 @media (max-width: 210px){
     #banner{
         margin-top: 200px;
+    }
+    #articulos-home{
+        align-items: inherit;
     }
 }
 
