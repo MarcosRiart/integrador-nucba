@@ -165,6 +165,99 @@ body{
     font-weight: 200;
 }
 
+#newsLetters-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #14141433;
+    padding-top: 10px;
+    gap: 15px;
+}
+
+.form-newsLetters{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-form-newsLetters{
+    font-weight: 600;
+    color: #141414;
+    font-size: 0.9rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.inputs-newsLetters{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-email{
+    color: #141414;
+    background-color: #fff;
+    border: 2px solid #141414;
+    height: 40px;
+    padding: 7px;
+}
+
+.form-submit{
+    font-weight: 200;
+    text-transform: uppercase;
+    padding: 7px;
+    color: #fff;
+    background-color: #141414;
+    border: 1px solid #141414;
+}
+
+.redes-contactos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.imagen-redes{
+    transform: scale(0.8);
+}
+
+.imagen-redes:hover{
+    transform: scale(1);
+    transition: all 0.7s ease;
+}
+
+.seccion-contactos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-contactos{
+    color: #141414;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.lista-contactos{
+    list-style-type: none;
+}
+
+.link-lista-contactos{
+    text-decoration: none;
+    color: #141414
+}
+
+.link-lista-contactos:hover{
+    text-decoration: underline;
+    color: #141414;
+}
+
+
 @media (min-width: 1024px){
     .top-info{
         flex-direction: row;
@@ -179,6 +272,11 @@ body{
         flex-direction: row;
         align-items: flex-start;
         margin-bottom: 50px;
+    }
+    #newsLetters-contacto{
+        flex-direction: row;
+        padding-top: 15px;
+        justify-content: space-around;
     }
 }
 
@@ -213,6 +311,30 @@ body{
     }
 }
 
+@media (max-width: 300px){
+    .inputs-newsLetters{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 250px){
+    .link-lista-contactos{
+        font-size: 0.75rem;
+    }
+    .imagen-redes{
+        transform: scale(0.5);
+    }
+    .imagen-redes:hover{
+        transform: scale(0.7);
+    }
+}
+
+@media(max-width: 225px){
+    .form-email{
+        width: 90%;
+    }
+}
+
 @media (max-width: 210px){
     #banner{
         margin-top: 200px;
@@ -220,11 +342,19 @@ body{
     #articulos-home{
         align-items: inherit;
     }
+    .link-lista-contactos{
+        font-size: 0.5rem;
+        text-align: center;
+        font-weight: 600;
+    }
 }
 
 @media (max-width: 165px){
     #banner{
         margin-top: 225px;
+    }
+    .imagen-redes{
+        width: 90%;
     }
 }
 
