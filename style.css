@@ -120,23 +120,32 @@ body{
 }
 
 .titulo-articulos-home{
+    margin-top: 20px;
     font-weight: 600;
 }
 
-.cards-articulos-home{
+.seccion-cards-productos{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
-    gap: 30px;
 }
 
-.card-home{
-    width: 80%;
+.card-productos{
+    width: 140px;
+    border: none;
 }
 
-.text-card-home{
-    font-weight: 600;
+.titulo-card-productos{
+    font-size: 14px;
+}
+
+.precio-sneaker{
+    font-weight: 700;
+    border-bottom: 1px solid #008900;
+    color: #016001;
 }
 
 #envios-pagos{
@@ -288,6 +297,48 @@ body{
     width: 20px;
 }
 
+.seccion-productos{
+    margin-top: 175px;
+    gap: 15px;
+}
+
+.titulo-seccion-productos{
+    font-weight: 200;
+    color: #141414;
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid #14141499;
+    padding-bottom: 10px;
+}
+
+.banner-productos-jordan{
+    width: 100%;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+.titulos-marcas-productos{
+    font-weight: 200;
+    color: #141414;
+    font-size: 1.5rem;
+    text-align: left;
+    border-bottom: 1px ridge #14141499;
+    padding-bottom: 10px;
+    margin-top: 25px;
+}
+
+.titulo-hype{
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.texto-uncoming{
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #000;
+}
+
 @media (min-width: 1024px){
     .top-info{
         flex-direction: row;
@@ -298,10 +349,14 @@ body{
         flex-direction: row;
         gap: 10px;
     }
-    .cards-articulos-home{
+    .seccion-cards-productos{
         flex-direction: row;
-        align-items: flex-start;
-        margin-bottom: 50px;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+    }
+    .card-productos{
+        width: 200px;
     }
     #newsLetters-contacto{
         flex-direction: row;
@@ -347,12 +402,6 @@ body{
     }
 }
 
-@media (min-width: 500px){
-    .card-home{
-        width: 18rem;
-    }
-}
-
 @media (max-width: 300px){
     .inputs-newsLetters{
         flex-direction: column;
@@ -368,6 +417,12 @@ body{
     }
     .imagen-redes:hover{
         transform: scale(0.7);
+    }
+    .texto-uncoming{
+        font-size: 1.1rem;
+    }
+    .items-envios-pagos{
+        width: 85px;
     }
 }
 
@@ -388,6 +443,15 @@ body{
         font-size: 0.5rem;
         text-align: center;
         font-weight: 600;
+    }
+    .texto-uncoming{
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width: 170px){
+    .card-productos{
+        width: 120px;
     }
 }
 
