@@ -432,6 +432,12 @@ body{
     }
 }
 
+@media (max-width: 360px){
+    .dropdown-item{
+        white-space: pre-wrap;
+    }
+}
+
 @media (max-width: 300px){
     .inputs-newsLetters{
         flex-direction: column;
@@ -453,6 +459,9 @@ body{
     }
     .items-envios-pagos{
         width: 85px;
+    }
+    .dropdown-menu{
+        min-width: 8.5rem;
     }
 }
 
@@ -485,6 +494,9 @@ body{
 @media(max-width: 170px){
     .card-productos{
         width: 120px;
+    }
+    .dropdown-menu{
+        min-width: 7.7rem;
     }
 }
 
