@@ -80,6 +80,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color: #fff;
+    list-style-type: none;
 }
 
 .link-nav{
@@ -94,11 +95,40 @@ body{
 
 .link-nav:hover{
     transition: all 0.5s linear;
-    border-radius: 20px;
-    padding: 5px;
-    color: #ffffff;
-    background-color: #dc3545;
-    transform: scale(1.1);
+    padding: 2px;
+    color: #dc3545;
+}
+
+.link-nav-drop.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: auto;
+    position: absolute;
+}
+
+.dropdown-item:hover {
+    text-decoration: #dc3545;
+    color: #dc3545;
+    transition: 0.5s;
+    background-color: transparent;
+    transition: ease-in-out 350ms;
+}
+
+.dropdown-menu{
+    border-radius: 0;
+}
+
+.dropdown-item{
+    font-weight: 400;
+    color: #000;
+}
+
+.dropdown, .dropleft, .dropright, .dropup{
+    position: relative;
+}
+
+.dropdown-toggle::after{
+    margin: auto;
+    margin-left: 7px;
 }
 
 #banner{
@@ -426,16 +456,16 @@ body{
     }
 }
 
-@media(max-width: 225px){
+@media(max-width: 230px){
+    #banner{
+        margin-top: 200px;
+    }
     .form-email{
         width: 90%;
     }
 }
 
 @media (max-width: 210px){
-    #banner{
-        margin-top: 200px;
-    }
     #articulos-home{
         align-items: inherit;
     }
@@ -446,6 +476,9 @@ body{
     }
     .texto-uncoming{
         font-size: 0.7rem;
+    }
+    .list-link-nav{
+        padding-left: 0;
     }
 }
 
