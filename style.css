@@ -406,6 +406,42 @@ body{
     font-weight: 400;
 }
 
+.imagen-banner-login{
+    margin-top: 185px;
+}
+
+#form-login{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.titulo-login{
+    font-weight: 600;
+    color: #141414;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #3232329e;
+}
+
+.link-login-register{
+    color: #606060;
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.link-login-register:hover{
+    text-decoration: underline;
+    color: #606060;
+}
+
+.form-control:focus{
+    border-color: #1414142e;
+    box-shadow: 0 0 0 0.25rem #14141452;
+}
+
 @media (min-width: 576px){
     .navbar-collapse{
         flex-grow: 0;
@@ -568,6 +604,9 @@ body{
     .texto-about{
         font-size: 1rem;
     }
+    .imagen-banner-login{
+        margin-top: 210px;
+    }
 }
 
 @media(max-width: 170px){
@@ -595,6 +634,9 @@ body{
     .imagen-banner-contactos{
         margin-top: 225px;
     }
+    .imagen-banner-login{
+        margin-top: 235px;
+    }
 }
 
 @media (max-width: 150px){
@@ -603,5 +645,8 @@ body{
     }
     .imagen-banner-contactos{
         margin-top: 250px;
+    }
+    .imagen-banner-login{
+        margin-top: 260px;
     }
 }

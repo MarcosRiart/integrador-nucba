@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300&family=Lato:wght@100;300;400&family=Open+Sans:wght@300;400&family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
-    <title>home</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300&family=Lato:wght@100;300;400&family=Open+Sans:wght@300;400&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Register</title>
+    </head>
 <body>
     <header id="header-navbar">
         <div class="top-info">
@@ -65,72 +65,37 @@
             </div>      
         </nav>    
     </header>
-    <section id="banner">
-        <img class="banner-home" src="./imagenes/Banner-drop.png" alt="banner-home-drops">
-    </section>
     <section>
-        <div id="articulos-home">
-            <h4 class="titulo-articulos-home">NIKE-JORDAN</h4>
-            <h5>Los mejores drops de Nike with Jordan🔥</h5>
-            <div class="seccion-cards-productos">
-                <div class="card card-productos">
-                    <img src="./imagenes/jordan-1.jpg" class="card-img-top" alt="jordan-1">
-                    <div class="card-body">
-                      <h5 class="card-title titulo-card-productos">Jordan 1 Mid Pomegranate-white 8us - <span class="precio-sneaker">U$D 670</span></h5>
-                    </div>
-                  </div>
-                  <div class="card card-productos">
-                    <img src="./imagenes/jordan-2.jpg" class="card-img-top" alt="jordan-2">
-                    <div class="card-body">
-                        <h5 class="card-title titulo-card-productos">Jordan 1 Low Chicago Bulls-red 10us - <span class="precio-sneaker">U$D 550</span></h5>
-                    </div>
-                  </div>
-                  <div class="card card-productos">
-                    <img src="./imagenes/jordan-3.jpg" class="card-img-top" alt="jordan-3">
-                    <div class="card-body">
-                      <h5 class="card-title titulo-card-productos">Jordan 1 Mid SE Light Mulberry-white 11us - <span class="precio-sneaker">U$D 390</span></h5>
-                    </div>
-                  </div>
-                  <div class="card card-productos">
-                    <img src="./imagenes/jordan-4.jpg" class="card-img-top" alt="jordan-4">
-                    <div class="card-body">
-                      <h5 class="card-title titulo-card-productos">Jordan 1 Mid Lt Iron atmosphere-white 10us - <span class="precio-sneaker">U$D 430</span></h5>
-                    </div>
-                  </div>
-            </div>
+        <div id="banner-login" class="container">
+            <img class="container imagen-banner-login" src="./imagenes/banner-login.jpg" alt="banner-login">
         </div>
     </section>
-    <section>
-        <div id="envios-pagos">
-            <div class="items-envios-pagos">
-                <img class="imagen-servicios-envios-pagos" src="./imagenes/envios2.png" alt="servicio-envio">
-                <h5 class="titulo-servicios">
-                    Envíos a todo el pais!.
-                </h5>
-                <h6>
-                    Entregas a la puerta de tu domicilio.
-                </h6>
-            </div>
-            <div class="items-envios-pagos">
-                <img class="imagen-servicios-envios-pagos" src="./imagenes/payment.png" alt="servicio-pagos">
-                <h5 class="titulo-servicios">
-                    Todos los medios de pago.
-                </h5>
-                <h6>
-                    Comprá con el metodo que desees.
-                </h6>
-            </div>
-            <div class="items-envios-pagos">
-                <img class="imagen-servicios-envios-pagos" src="./imagenes/candado.png" alt="compra-protegida">
-                <h5 class="titulo-servicios">
-                    Compra protegida.
-                </h5>
-                <h6>
-                    Tus datos nunca seran compartidos.
-                </h6>
-            </div>
+    <form id="form-login" class="container">
+        <h4 class="titulo-login">Crear cuenta.</h4>
+        <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" name="nombre">
         </div>
-    </section>
+        <div class="mb-3">
+            <label for="surname" class="form-label">Apellido</label>
+            <input type="text" class="form-control" name="apellido">
+        </div>
+        <div class="mb-3">
+            <label for="telefono" class="form-label">Numero de telefono</label>
+            <input type="tel" class="form-control" name="tel">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <a href="index.html">
+            <button class="form-submit" type="submit">Registrarme</button>
+        </a>
+    </form>
     <footer>
         <div id="newsLetters-contacto">
             <form class="form-newsLetters">
